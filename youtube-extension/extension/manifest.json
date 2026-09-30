@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Jev Relevance",
+  "version": "0.1.0",
+  "description": "Prioriza videos del Home de YouTube con evaluaciones de relevancia de Jev.",
+  "permissions": ["storage"],
+  "host_permissions": ["http://127.0.0.1:8788/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "YouTube Jev Relevance",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content/youtube-adapter.js", "content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+

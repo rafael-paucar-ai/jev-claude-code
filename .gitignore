@@ -1,0 +1,11 @@
+node_modules/
+.claude/
+.env*
+*.docx
+~$*
+~WRL*.tmp
+artifacts/
+fast-compaction/
+Checkout-Discount-Investigation.*
+jev-compact-test.mjs
+jev-claude-code-transcript.txt

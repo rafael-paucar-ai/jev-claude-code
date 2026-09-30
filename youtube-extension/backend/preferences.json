@@ -1,0 +1,27 @@
+{
+  "interests": [
+    "Claude Code",
+    "coding agents",
+    "herramientas nuevas de IA",
+    "automatización",
+    "desarrollo de aplicaciones con IA",
+    "nuevos modelos",
+    "proyectos GitHub interesantes",
+    "casos de uso reales para negocios"
+  ],
+  "prioritize": [
+    "novedades recientes",
+    "demos prácticas",
+    "herramientas utilizables",
+    "nuevos workflows",
+    "proyectos que pueda investigar para contenido",
+    "aplicaciones reales"
+  ],
+  "penalize": [
+    "contenido excesivamente genérico",
+    "listas superficiales",
+    "temas alejados de IA, desarrollo o automatización",
+    "contenido repetitivo"
+  ]
+}
+

@@ -1,0 +1,149 @@
+[
+  {
+    "label": "admin: logout",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Click the Log out button. Done when the Sign in page is visible."
+  },
+  {
+    "label": "admin: login",
+    "url": "http://127.0.0.1:4173/login",
+    "goal": "Type the username into the Username field, type the password into the Password field, then click 'Sign in securely' once. Done when the page title is Dashboard.",
+    "texts": [
+      "admin"
+    ],
+    "secret": "admin123",
+    "expect": {
+      "titleStartsWith": "Dashboard"
+    }
+  },
+  {
+    "label": "admin: Dashboard (allowed)",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Look at this page. Done when the page content is visible.",
+    "expect": {
+      "titleStartsWith": "Dashboard"
+    }
+  },
+  {
+    "label": "admin: Employees (allowed)",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Click the Employees link in the sidebar navigation. Done when the Employees page heading is visible.",
+    "expect": {
+      "titleStartsWith": "Employees"
+    }
+  },
+  {
+    "label": "admin: Reports (allowed)",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Click the Reports link in the sidebar navigation. Done when the Reports page heading is visible.",
+    "expect": {
+      "titleStartsWith": "Reports"
+    }
+  },
+  {
+    "label": "admin: Settings (allowed)",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Click the Settings link in the sidebar navigation. Done when the Settings page heading is visible.",
+    "expect": {
+      "titleStartsWith": "Settings"
+    }
+  },
+  {
+    "label": "manager: logout",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Click the Log out button. Done when the Sign in page is visible."
+  },
+  {
+    "label": "manager: login",
+    "url": "http://127.0.0.1:4173/login",
+    "goal": "Type the username into the Username field, type the password into the Password field, then click 'Sign in securely' once. Done when the page title is Dashboard.",
+    "texts": [
+      "manager"
+    ],
+    "secret": "manager123",
+    "expect": {
+      "titleStartsWith": "Dashboard"
+    }
+  },
+  {
+    "label": "manager: Dashboard (allowed)",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Look at this page. Done when the page content is visible.",
+    "expect": {
+      "titleStartsWith": "Dashboard"
+    }
+  },
+  {
+    "label": "manager: Employees (allowed)",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Click the Employees link in the sidebar navigation. Done when the Employees page heading is visible.",
+    "expect": {
+      "titleStartsWith": "Employees"
+    }
+  },
+  {
+    "label": "manager: Reports (allowed)",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Click the Reports link in the sidebar navigation. Done when the Reports page heading is visible.",
+    "expect": {
+      "titleStartsWith": "Reports"
+    }
+  },
+  {
+    "label": "manager: Settings (denied)",
+    "url": "http://127.0.0.1:4173/settings",
+    "goal": "Look at this page. Done when the page content is visible.",
+    "expect": {
+      "titleIncludes": "Access denied"
+    }
+  },
+  {
+    "label": "employee: logout",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Click the Log out button. Done when the Sign in page is visible."
+  },
+  {
+    "label": "employee: login",
+    "url": "http://127.0.0.1:4173/login",
+    "goal": "Type the username into the Username field, type the password into the Password field, then click 'Sign in securely' once. Done when the page title is Dashboard.",
+    "texts": [
+      "employee"
+    ],
+    "secret": "employee123",
+    "expect": {
+      "titleStartsWith": "Dashboard"
+    }
+  },
+  {
+    "label": "employee: Dashboard (allowed)",
+    "url": "http://127.0.0.1:4173/dashboard",
+    "goal": "Look at this page. Done when the page content is visible.",
+    "expect": {
+      "titleStartsWith": "Dashboard"
+    }
+  },
+  {
+    "label": "employee: Employees (denied)",
+    "url": "http://127.0.0.1:4173/employees",
+    "goal": "Look at this page. Done when the page content is visible.",
+    "expect": {
+      "titleIncludes": "Access denied"
+    }
+  },
+  {
+    "label": "employee: Reports (denied)",
+    "url": "http://127.0.0.1:4173/reports",
+    "goal": "Look at this page. Done when the page content is visible.",
+    "expect": {
+      "titleIncludes": "Access denied"
+    }
+  },
+  {
+    "label": "employee: Settings (denied)",
+    "url": "http://127.0.0.1:4173/settings",
+    "goal": "Look at this page. Done when the page content is visible.",
+    "expect": {
+      "titleIncludes": "Access denied"
+    }
+  }
+]
